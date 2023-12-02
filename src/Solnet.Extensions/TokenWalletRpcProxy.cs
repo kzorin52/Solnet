@@ -72,7 +72,7 @@ namespace Solnet.Extensions
         /// Sends a transaction.
         /// </summary>
         /// <param name="transaction">The signed transaction as byte array.</param>
-        /// <param name="skipPreflight">If true skip the prflight transaction checks (default false).</param>
+        /// <param name="skipPreflight">If true skip the preflight transaction checks (default false).</param>
         /// <param name="commitment">The block commitment used to retrieve block hashes and verify success.</param>
         /// <returns>Returns an object that wraps the result along with possible errors with the request.</returns>
         public async Task<RequestResult<string>> SendTransactionAsync(byte[] transaction, bool skipPreflight = false, Commitment commitment = Commitment.Finalized)
