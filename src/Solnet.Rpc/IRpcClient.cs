@@ -1195,7 +1195,7 @@ namespace Solnet.Rpc
         /// Sends a transaction.
         /// </summary>
         /// <param name="transaction">The signed transaction as base-64 encoded string.</param>
-        /// <param name="skipPreflight">If true skip the prflight transaction checks (default false).</param>
+        /// <param name="skipPreflight">If true skip the preflight transaction checks (default false).</param>
         /// <param name="preFlightCommitment">The block commitment used for preflight.</param>
         /// <returns>Returns a task that holds the asynchronous operation result and state.</returns>
         Task<RequestResult<string>> SendTransactionAsync(string transaction, bool skipPreflight = false,
@@ -1205,7 +1205,7 @@ namespace Solnet.Rpc
         /// Sends a transaction.
         /// </summary>
         /// <param name="transaction">The signed transaction as base-64 encoded string.</param>
-        /// <param name="skipPreflight">If true skip the prflight transaction checks (default false).</param>
+        /// <param name="skipPreflight">If true skip the preflight transaction checks (default false).</param>
         /// <param name="preFlightCommitment">The block commitment used for preflight.</param>
         /// <returns>Returns an object that wraps the result along with possible errors with the request.</returns>
         RequestResult<string> SendTransaction(string transaction, bool skipPreflight = false,
@@ -1215,7 +1215,7 @@ namespace Solnet.Rpc
         /// Sends a transaction.
         /// </summary>
         /// <param name="transaction">The signed transaction as byte array.</param>
-        /// <param name="skipPreflight">If true skip the prflight transaction checks (default false).</param>
+        /// <param name="skipPreflight">If true skip the preflight transaction checks (default false).</param>
         /// <param name="commitment">The block commitment used to retrieve block hashes and verify success.</param>
         /// <returns>Returns a task that holds the asynchronous operation result and state.</returns>
         Task<RequestResult<string>> SendTransactionAsync(byte[] transaction, bool skipPreflight = false,
@@ -1225,7 +1225,7 @@ namespace Solnet.Rpc
         /// Sends a transaction.
         /// </summary>
         /// <param name="transaction">The signed transaction as byte array.</param>
-        /// <param name="skipPreflight">If true skip the prflight transaction checks (default false).</param>
+        /// <param name="skipPreflight">If true skip the preflight transaction checks (default false).</param>
         /// <param name="commitment">The block commitment used to retrieve block hashes and verify success.</param>
         /// <returns>Returns an object that wraps the result along with possible errors with the request.</returns>
         RequestResult<string> SendTransaction(byte[] transaction, bool skipPreflight = false,
