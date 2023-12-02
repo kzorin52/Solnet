@@ -286,7 +286,7 @@ namespace Solnet.Rpc
         /// Sends a transaction.
         /// </summary>
         /// <param name="transaction">The signed transaction as byte array.</param>
-        /// <param name="skipPreflight">If true skip the prflight transaction checks (default false).</param>
+        /// <param name="skipPreflight">If true skip the preflight transaction checks (default false).</param>
         /// <param name="preflightCommitment">The block commitment used to retrieve block hashes and verify success.</param>
         /// <param name="callback">The callback to handle the result.</param>
         public void SendTransaction(byte[] transaction,
@@ -300,7 +300,7 @@ namespace Solnet.Rpc
         /// Sends a transaction.
         /// </summary>
         /// <param name="transaction">The signed transaction as base-64 encoded string.</param>
-        /// <param name="skipPreflight">If true skip the prflight transaction checks (default false).</param>
+        /// <param name="skipPreflight">If true skip the preflight transaction checks (default false).</param>
         /// <param name="preflightCommitment">The block commitment used for preflight.</param>
         /// <param name="callback">The callback to handle the result.</param>
         public void SendTransaction(string transaction,
